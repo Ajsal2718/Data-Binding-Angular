@@ -1,0 +1,66 @@
+
+<!-- interPolution -->
+
+<h1 [style.text-align]="function()"><u>String InterPolution</u></h1>
+
+<h2 style="text-align: center;">My name is {{data.tech3}}</h2>
+<h2 style="text-align: center;">Hello {{data.title}}</h2>
+<h2 style="text-align: center;">This is a {{data.tech1}}</h2>
+<h2 style="text-align: center;">Language {{data.tech2}}</h2><hr>
+
+<!-- Property binding -->
+
+<h1 [style.text-align]="function()"><u>Property Binding</u></h1>
+
+<div [style.text-align] = "function()"  [style.height] = "colorfunction()" [style.background-color] = color()>
+  <input type="text" value="{{value}}" placeholder="{{value}}">
+</div>
+<br> <hr>
+
+<!--Event Handiling-->
+
+<h1 [style.text-align]="function()"><u>Event Handling</u></h1>
+<div style="text-align: center;">
+<h2>Hi {{str}}</h2>
+<button  (click) = "morning()">Good Morning</button>
+<button (click) = "evening()">Good Evening</button>
+</div> <br> 
+
+<!-- count -->
+
+<div style="text-align: center;">
+<h2>Count Number {{count}}</h2>
+<h2>Count number is {{oddeven}}</h2>
+<button (click)="ingre()">Ingreement</button>
+<button (click)="degre()">Degreement</button>
+</div> <br> <hr>
+
+<!-- Tow Way binding -->
+
+<h1 [style.text-align]="function()">Two Way Binding</h1>
+<div style="text-align: center;">
+  <input type="number" [(ngModel)] = "res"> &nbsp;=
+  <button (click) = "check()">CheckOut</button> &nbsp;
+  <button (click) = "clear()">Clear</button> 
+</div>
+
+<div style="text-align: center;">
+  <h1 [hidden] = "hidden">{{res}} {{string}}</h1>
+</div> <br><hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
